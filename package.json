@@ -1,0 +1,16 @@
+{
+  "name": "habitflow",
+  "private": true,
+  "version": "1.0.0",
+  "description": "HabitFlow — A habit tracking and streak monitoring application",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "build:api": "cd apps/api && npm run build",
+    "build:web": "cd apps/web && npm run build",
+    "build": "npm run build:api && npm run build:web",
+    "dev:api": "cd apps/api && npm run start:dev",
+    "dev:web": "cd apps/web && npm start"
+  }
+}
